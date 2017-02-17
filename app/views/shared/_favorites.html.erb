@@ -1,0 +1,20 @@
+<div class="jumbotron">
+	<div class="panel-body panel-danger">
+		<h2>Top 5 artists</h2>
+		<% @favorites.each do |fav| %>
+		<div class="row">
+			<div class="col-sm-12 col-md-12">
+				<%= link_to fav[0].lastfm_url do %>
+					<div class="thumbnail">
+					<%= image_tag("#{fav[0].img_large}") %>
+					  <div class="caption">
+					    <h3><%= fav[0].name %> </h3>
+					    <p><%= fav[1] %> likes </p>
+					  </div>
+					</div>
+				<% end %>
+			</div>
+		</div>
+		<% end %>
+	</div>
+</div>

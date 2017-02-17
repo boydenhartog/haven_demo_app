@@ -11,13 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170216205532) do
+ActiveRecord::Schema.define(version: 20170217152409) do
 
   create_table "user_favorites", force: :cascade do |t|
     t.integer  "user_id"
     t.string   "artist_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string   "name"
+    t.string   "img_large"
+    t.string   "lastfm_url"
   end
 
   add_index "user_favorites", ["artist_id"], name: "index_user_favorites_on_artist_id"

@@ -8,19 +8,23 @@
 	</div>
 <% end %>	
 <hr/>
+
 <!-- Search results -->
-<table class="table table-striped table-bordered table-hover">
-	<thead>
-        <tr>
-            <th>Artist</th>
-            <th>Vote!</th>
-        </tr>
-    </thead>
-	<tbody>
-		<% unless @last_fm.results.nil? %>
+
+<% unless @last_fm.results.nil? %>
+	<table class="table table-striped table-bordered table-hover">
+		<thead>
+	        <tr>
+	        	<th>Artist</th>
+	            <th>Listeners</th>
+	            <th>Vote!</th>
+	        </tr>
+	    </thead>
+		<tbody>		
 			<% @last_fm.results.each do |result| %>
 				<%= render 'result', result: result %>
 			<% end %>
-		<% end %>
-	</tbody>
-</table>
+		
+		</tbody>
+	</table>
+<% end %>

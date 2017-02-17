@@ -18,6 +18,6 @@ class UserFavoritesController < ApplicationController
 
 	private
 	def user_favorite_params
-		params.permit(:artist_id, :user_id, :id)
+		params.permit(:artist_id, :user_id, :id, :img_large, :lastfm_url, :name)
 	end
 end

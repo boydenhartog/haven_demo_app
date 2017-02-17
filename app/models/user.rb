@@ -6,7 +6,7 @@ class User < ActiveRecord::Base
 
   has_many :user_favorites
 
-  def has_favorite?(artist_id)
-  	self.user_favorites.where(artist_id: artist_id).first
+  def has_favorite?(name)
+  	self.user_favorites.find_by(name: name)
   end
 end

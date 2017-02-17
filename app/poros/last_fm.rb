@@ -25,4 +25,8 @@ class LastFm
     end
   end
 
+  def get_fav(name)
+    UserFavorite.find_by(name: name) unless UserFavorite.find_by(name: name).nil?
+  end
+
 end

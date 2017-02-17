@@ -7,5 +7,4 @@ class LastFmsController < ApplicationController
 	    @last_fm = LastFm.new
 	  end
 	end
-
 end
