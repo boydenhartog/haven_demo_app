@@ -1,0 +1,10 @@
+<tr>
+	<th><%= result['name'] %></th>
+	<th>
+		<% if current_user.has_favorite?(result['mbid']).nil? %>
+			<%= button_to "Favorite!", { controller: "user_favorites", action: "create", user_id: current_user, artist_id: result['mbid'] }, method: :post, format: 'html', class: "btn btn-primary" %>
+		<% else %>
+			<%= button_to "Unfavorite", current_user.has_favorite?(result['mbid']), :method => :delete, class: "btn btn-danger" %>
+		<% end %>
+	</th>
+</tr>

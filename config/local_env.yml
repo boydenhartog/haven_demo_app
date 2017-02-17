@@ -1,0 +1,6 @@
+
+# Add account settings and API keys here.
+# Each entry gets set as a local environment variable.
+# This file overrides ENV variables in the Unix shell.
+
+LASTFM_API_KEY: '235ae8e0573bcd4986d270dd291c76aa'

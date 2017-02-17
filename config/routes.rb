@@ -4,4 +4,7 @@ Rails.application.routes.draw do
   resources :users
   resources :user_favorites
   root 'static#home'
+
+  resource :last_fms, only: [:show]
+
 end
