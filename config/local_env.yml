@@ -3,4 +3,5 @@
 # Each entry gets set as a local environment variable.
 # This file overrides ENV variables in the Unix shell.
 
+# Made a minor mistake, forgot to add this file to .gitignore  :-(
 LASTFM_API_KEY: '235ae8e0573bcd4986d270dd291c76aa'
