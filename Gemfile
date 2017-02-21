@@ -9,16 +9,23 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
+group :development do
+  gem 'web-console', '~> 2.0'
+end
+
 group :development, :test do
   gem 'sqlite3'	
-  gem 'rspec-rails', '3.1.0'
+  gem 'rspec-rails'
   gem 'byebug'
-  gem 'web-console', '~> 2.0'
   gem 'spring'
+  gem 'database_cleaner'
+  gem 'vcr'
+  gem 'webmock'
+  gem 'factory_girl_rails'
 end
 
 group :test do
-  gem 'capybara', '2.7.1'
+  gem 'capybara'
 end
 
 group :production do

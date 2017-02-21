@@ -4,9 +4,9 @@ class LastFmsController < ApplicationController
 	    @last_fm = LastFm.new(query: search_params)
 	    @last_fm.perform if @last_fm.valid?
 	    #Show error in case API fails 
-	    flash['notice'] = @last_fm.error_notice if @last_fm.error_notice
+	    flash['error'] = @last_fm.error_notice if @last_fm.error_notice
 	  else
 	    @last_fm = LastFm.new
 	  end
 	end
-end
+end 

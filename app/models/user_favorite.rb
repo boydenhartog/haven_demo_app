@@ -1,5 +1,6 @@
 class UserFavorite < ActiveRecord::Base
   belongs_to :user
+  validates :name, :user_id, presence:true
   validates_uniqueness_of :user_id, :scope => :name
 
   def self.fetch_favorites
