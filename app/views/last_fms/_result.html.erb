@@ -3,7 +3,7 @@
 	<th><%= result['listeners'] %></th>
 	<th> 
 		<% if current_user.has_favorite?(result['name']).nil? %>
-			<%= button_to "Like!", { controller: "user_favorites", action: "create", user_id: current_user, artist_id: result['mbid'], img_large: result['image'][2]['#text'], lastfm_url: result['url'], name: result['name'] }, method: :post, format: 'html', class: "btn btn-primary" %>
+			<%= button_to "Like!", { controller: "user_favorites", action: "create", user_id: current_user, artist_id: result['mbid'], img_large: result['image'][4]['#text'], lastfm_url: result['url'], name: result['name'] }, method: :post, format: 'html', class: "btn btn-primary" %>
 		<% else %>
 			<%= button_to "Unlike", current_user.has_favorite?(result['name']), :method => :delete, class: "btn btn-danger" %>
 		<% end %>

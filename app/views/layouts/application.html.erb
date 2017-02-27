@@ -7,6 +7,8 @@
 	  <%= csrf_meta_tags %>
 	</head>
 	<body>
+		<!-- <img class="bg" src="http://eskipaper.com/images/hd-guitar-wallpapers-5.jpg"> -->
+		<img class="bg" src="http://dcervin.com/i/2017/02/music-wallpapers-high-quality-resolution.jpg">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
@@ -15,11 +17,11 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-8">
+				<div class="col-md-7">
 					<%= yield %>
 				</div>
-				<div class="col-md-4">
-					<%= render 'shared/favorites' %>
+				<div class="col-md-5">
+					<%= render 'shared/favorites_carousel' %>
 				</div>
 			</div>
 		</div>
