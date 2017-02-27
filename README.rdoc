@@ -1,4 +1,6 @@
 Demo application that consumes the Last.FM API to search for artists.
 Users are able to like their favorite artists. The top 5 is displayed in a sidebar.
 
+Live demo: https://desolate-journey-22696.herokuapp.com
+
 By Boy den Hartog
